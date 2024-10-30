@@ -1,6 +1,7 @@
 package com.greedy.greedy;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class RallyStop {
@@ -15,6 +16,7 @@ public class RallyStop {
     }
 
     public List<Integer> findStops() {
+        Arrays.sort(stopPoints);
         List<Integer> selectedStops = new ArrayList<>();
         int currentLocation = 0;
 

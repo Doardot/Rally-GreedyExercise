@@ -1,6 +1,7 @@
 package com.greedy.greedy;
 
 import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
@@ -37,7 +38,7 @@ public class RallyStopTest {
     public void testScenario3() {
         int totalDistance = 1500;
         int maxDailyDistance = 300;
-        int[] stopPoints = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300 };
+        int[] stopPoints = { 200, 100, 300, 900, 500, 600, 700, 800, 400, 1000, 1100, 1200, 1300 };
         List<Integer> expectedStops = List.of(300, 600, 900, 1200);
 
         RallyStop rallyStop = new RallyStop(totalDistance, maxDailyDistance, stopPoints);
