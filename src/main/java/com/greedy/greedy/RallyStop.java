@@ -24,12 +24,7 @@ public class RallyStop {
             throw new IllegalArgumentException("Erro: O primeiro ponto de parada está muito distante do início.");
         }
 
-        if (stopPoints[stopPoints.length - 1] > totalDistance) {
-            throw new IllegalArgumentException(
-                    "Erro: O último ponto de parada está muito distante da linha de chegada.");
-        }
-
-        if (stopPoints[stopPoints.length - 1] + maxDailyDistance < totalDistance) {
+        if (stopPoints[stopPoints.length - 1] > totalDistance || stopPoints[stopPoints.length - 1] + maxDailyDistance < totalDistance) {
             throw new IllegalArgumentException(
                     "Erro: O último ponto de parada está muito distante da linha de chegada.");
         }
